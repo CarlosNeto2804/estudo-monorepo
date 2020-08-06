@@ -10,6 +10,9 @@ interface State {
   previousEnd: number;
   rowLength: number;
 }
+/**
+ * @description Serviço de conversão de arquivos csv -> json
+ */
 class CsvParser extends Transform {
   private _prev: any = null;
   private headers: Array<any> = [];
