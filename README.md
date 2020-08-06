@@ -20,5 +20,4 @@ $ yarn dev
 
 Aplicação estruturada modulos de serviços, onde cada serviço atua de forma isolada, facilitando a migração para uma aquitetura de microserviços.
 Cada serviço deve ser construido utlizando o padrão de injeção de dependencia, onde cada objeto recebe suas dependencias externas via parâmetro em seu construtor. Cada serviço deve ter seu arquivo index, que é responsável por gerenciar as dependencias do serviço
-    
-
+O arquivo src/services/index.ts é responsável por instanciar os serviços e ativar os endpoints
