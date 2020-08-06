@@ -1,0 +1,12 @@
+{
+    "request_exemples": {
+        "method":"post",
+        "route": "apiBaseUrl/cdb/calculate-price",
+        "type": "json",
+        "body": {
+            "investmentDate": "2016-11-14",
+            "cdbRate": 103.5,
+            "currentDate": "2019-12-03"
+        }
+    }
+}
