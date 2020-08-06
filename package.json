@@ -1,8 +1,14 @@
 {
-  "name": "backend",
+  "name": "api-calculadora-cdb",
+  "description": "Teste Desenvolvedor Sênior",
   "version": "1.0.0",
   "main": "Application.js",
   "license": "MIT",
+  "author": {
+    "name": "Carlos Alberto de Jesus Pereira Neto",
+    "email": "carloshtcursos@gmail.com",
+    "url": "https://github.com/CarlosNeto2804"
+  },
   "scripts": {
     "dev": "nodemon src/Application.ts",
     "start": "node dist/Application.js",
