@@ -3,6 +3,7 @@ import Cors from 'cors';
 import { DataBase } from './database';
 import { IPrice } from './interfaces/IPrice';
 import {Services} from './services'
+// import  ConfigEnvVars  from './config';
 class Application {
   public app: Express.Application;
   public db: DataBase<IPrice>;

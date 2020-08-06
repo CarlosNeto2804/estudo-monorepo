@@ -1,0 +1,66 @@
+/* PRIVACY POLICY
+Calculadora CDB
+Esta Política de Privacidade estabelece diretrizes sobre seu uso da aplicação web progressiva (do inglês, Progressive Web Application - PWA) denominada ControlPec (doravante chamada de “Aplicativo”) criada pela Empresa Brasileira de Pesquisa Agropecuária - Embrapa, por meio de sua Unidade de Pesquisa Científica, a Embrapa Gado de Corte, localizada em Campo Grande - MS - Brasil, e a Perseu Tecnologia, também localizada em Campo Grande - MS - Brasil. O Aplicativo é uma ferramenta de controle financeiro simplificado para a bovinocultura de corte que propicia aos produtores registrar e avaliar, de forma sistemática, custos e receitas.
+
+Quais informações o Aplicativo obtém e como elas serão usadas?
+Informações Fornecidas pelo Usuário 
+
+O Aplicativo obtém as informações fornecidas quando você o acessa e registra seu usuário (utilizando uma conta de rede social). O registro do usuário para uso do Aplicativo não é opcional.
+
+Quando você se registra conosco ou usa o Aplicativo, (a) você autoriza uma de suas redes sociais a nos fornecer seu nome, foto, endereço de e-mail, nome de usuário e outras informações de registro; (b) informações relacionadas a transações, tais como quando baixou ou usou nossos aplicativos móveis e aplicações web; (c) informações que você nos fornece quando nos contata para obter ajuda, (d) informações inseridas em nosso sistema ao usar o Aplicativo e sincronizar os dados e (e) comentários e notas que você insere ao avaliar a qualidade do Aplicativo.
+
+Podemos usar as informações que você nos forneceu para pesquisas científicas (de forma anônima) ou contatá-lo de tempos em tempos para fornecer informações importantes ou avisos necessários.
+
+Coleta Automática de Informações 
+
+O Aplicativo pode coletar determinadas informações automaticamente, incluindo mas não se limitando, ao tipo de dispositivo usado para acesso, o endereço IP de seu dispositivo, o sistema operacional do dispositivo, dados técnicos do navegador web utilizado e informações sobre como você usa o Aplicativo.
+
+O Aplicativo coleta informações precisas de localização em tempo real do dispositivo?
+Este aplicativo não coleta informações precisas sobre a localização do seu dispositivo.
+
+Terceiros veem e/ou têm acesso às informações obtidas pelo Aplicativo?
+Sim. Nós compartilharemos suas informações com terceiros apenas das formas descritas nesta declaração de privacidade.
+
+Podemos divulgar informações fornecidas pelo usuário e coletadas automaticamente nos seguintes casos:
+
+se exigido por lei, como para cumprir uma intimação ou processo legal;
+
+quando acreditamos de boa-fé que a divulgação é necessária para proteger nossos direitos, proteger sua segurança ou a segurança de outras pessoas, investigar fraudes ou responder a uma solicitação do governo;
+
+com nossos parceiros de pesquisa para desenvolver softwares ou criar novas tecnologias para a agropecuária;
+
+com nossos prestadores de serviços confiáveis ​​que trabalham em nosso nome, não têm um uso independente das informações que divulgamos a eles e concordam em aderir às regras estabelecidas nesta declaração de privacidade;
+
+se a WRI Brasil e/ou a Embrapa (ou uma de suas Unidades de Pesquisa Científica listadas neste documento) estiver envolvida em uma fusão, aquisição ou venda de todo ou parte de seus ativos, você será notificado por e-mail e/ou um aviso proeminente em nosso site sobre qualquer alteração na propriedade ou uso dessas informações, bem como quaisquer escolhas que você possa ter em relação a essas informações; e
+
+para anunciantes e redes de publicidade e empresas de análise de terceiros, conforme descrito na seção abaixo.
+
+Coleta Automática de Dados e Publicidade
+Podemos trabalhar com empresas de análise de dados para nos ajudar a entender como o Aplicativo está sendo utilizado (tais como a frequência e a duração do uso) e para gerar indicadores e capturar tendências das cadeias de produção agropecuária. Podemos eventualmente trabalhar com anunciantes e redes de publicidade de terceiros, que precisarão saber como você interage com a publicidade fornecida no Aplicativo. Eventuais anunciantes e redes de publicidade usarão algumas das informações coletadas pelo Aplicativo, incluindo mas não se limitando, ao número de identificação exclusivo do seu dispositivo móvel e seu número de telefone celular. Para proteger o anonimato dessas informações, usamos uma tecnologia de criptografia para ajudar a garantir que esses terceiros não possam identificá-lo pessoalmente. Esses terceiros também podem obter informações anônimas sobre outros aplicativos que você baixou, os sites que você visita, suas informações de localização não precisas (por exemplo, seu CEP) e outras informações de localização para ajudar a analisar e enviar publicidade direcionada anônima no Aplicativo e em outras aplicações que você visitar. Também podemos compartilhar versões criptografadas de informações que você forneceu a fim de permitir que terceiros incluam outras informações disponíveis sobre você para análise ou uso relacionado à publicidade.
+
+Se você deseja desativar o uso desse tipo de informação por terceiros para ajudar a veicular publicidade segmentada, visite a seção abaixo.
+
+Quais são os meus direitos de exclusão?
+Existem opções de exclusão para os usuários do Aplicativo:
+
+Desative toda a coleta de informações desinstalando o Aplicativo: Você pode parar toda a coleta de informações pelo Aplicativo facilmente, desinstalando o Aplicativo do seu dispositivo (caso o tenha adicionado à tela inicial) ou simplesmente suspendendo seu uso. O Aplicativo não coleta informações em background, ou seja, quando não está em primeiro plano sendo utilizado pelo usuário. Você pode usar os processos de desinstalação padrão que podem estar disponíveis como parte de seu dispositivo ou via mercado ou por loja virtual de aplicativos.
+
+Desative o uso de informações para veicular publicidade segmentada por anunciantes e/ou anunciantes de redes de terceiros: você pode, a qualquer momento, desativar o acesso aos dados de localização, bloqueando o acesso do Aplicativo ao local usando as configurações do dispositivo.
+
+Política de Retenção de Dados e Gerenciamento das Suas Informações
+Nós manteremos os dados fornecidos por você e as informações coletadas automaticamente enquanto você usar o Aplicativo e por tempo ilimitado a partir de então. Se você quiser que nós excluamos os dados que você forneceu por meio do Aplicativo, entre em contato conosco pelo sac@embrapa.br e responderemos em um tempo razoável.
+
+Crianças
+Não utilizamos o Aplicativo para solicitar conscientemente dados de menores de 13 anos. Se um pai ou responsável tomar conhecimento de que seu filho nos forneceu informações sem o seu consentimento, entre em contato conosco pelo e-mail sac@embrapa.br e nós excluiremos essas informações de nossos arquivos em um tempo razoável.
+
+Segurança
+Estamos preocupados em proteger a confidencialidade de suas informações. Fornecemos proteções físicas, eletrônicas e processuais para proteger as informações que processamos e mantemos. Por exemplo, limitamos o acesso a essas informações a funcionários e contratados autorizados ou parceiros que precisam conhecer essas informações para operar, desenvolver, derivar ou melhorar nosso Aplicativo ou desenvolver outros. Por favor, esteja ciente de que, embora nos empenhemos em fornecer uma segurança razoável para as informações que processamos e mantemos, nenhum sistema de segurança pode evitar todas as possíveis violações de segurança.
+
+Mudanças
+Esta Política de Privacidade pode ser atualizada de tempos em tempos por qualquer motivo. Vamos postar a nova Política de Privacidade aqui. Você precisa consultar esta Política de Privacidade regularmente para ver as alterações, pois o uso continuado será considerado consentimento de todas as eventuais alterações.
+
+Seu Consentimento
+Ao usar o Aplicativo, você está consentindo com o processamento de suas informações conforme estabelecido nesta Política de Privacidade (em sua versão mais recente). "Processamento" significa usar cookies em um computador ou dispositivo móvel, ou usar informações de qualquer forma, incluindo mas não se limitando a coletar, armazenar, excluir, usar, combinar e divulgar informações, todas as quais atividades que serão realizadas no Brasil. Se você reside fora do Brasil, suas informações serão transferidas, processadas e armazenadas de acordo com os padrões de privacidade do Brasil.
+
+Contate-nos
+Se você tiver alguma dúvida sobre privacidade durante o uso do aplicativo ou tiver dúvidas sobre nossas práticas, entre em contato conosco pelo e-mail sac@embrapa.br. */
