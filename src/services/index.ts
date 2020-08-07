@@ -1,10 +1,13 @@
-import Express from 'express';
-import { IDataBase } from '../interfaces/IDataBase';
+import { IServiceConstructor } from '../interfaces/IServiceConstructor';
+/* SERVICE */
 import { CalculatorBankCertificatesDeposit } from './calculator-bank-certificates-deposit';
 import { HomeIndex } from './home-index';
+import { SocialLogin } from './social-login';
+
 export class Services {
-  constructor(app: Express.Application, db: IDataBase<any>) {
-    new HomeIndex(app);
-    new CalculatorBankCertificatesDeposit(app, db);
+  constructor(params:IServiceConstructor) {
+    new HomeIndex(params.app);
+    new CalculatorBankCertificatesDeposit(params.app, params.db);
+    new SocialLogin(params.app, params.passport);
   }
 }

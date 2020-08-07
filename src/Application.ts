@@ -1,9 +1,10 @@
 import Express from 'express';
+import Passport from 'passport';
 import Cors from 'cors';
 import { DataBase } from './database';
 import { IPrice } from './interfaces/IPrice';
-import {Services} from './services'
-// import  ConfigEnvVars  from './config';
+import { IServiceConstructor } from './interfaces/IServiceConstructor';
+import { Services } from './services';
 class Application {
   public app: Express.Application;
   public db: DataBase<IPrice>;
@@ -33,15 +34,23 @@ class Application {
       console.log(error);
     }
   }
-  private services(){
-    new Services(this.app, this.db)
+  private services() {
+    const params: IServiceConstructor = {
+      app: this.app,
+      db: this.db,
+      passport: Passport,
+    };
+    new Services(params);
   }
   private middlewares(): void {
     this.app.use(Express.json());
     this.app.use(Cors());
+    this.app.use(Passport.initialize())
   }
   private listenPort(): void {
-    this.app.listen(process.env.PORT || 3000, () => console.log('Service Running'));
+    this.app.listen(process.env.PORT || 3000, () =>
+      console.log('Service Running')
+    );
   }
 }
 export default new Application();

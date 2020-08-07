@@ -9,7 +9,7 @@ export class GoogleStrategy {
           clientID: config.get('GOOGLE_CLIENT_ID'),
           clientSecret: config.get('GOOGLE_CLIENT_SECRET'),
           callbackURL: config.get('GOOGLE_URL_CB'),
-          scope: ['user','email'],
+          scope: ['profile','email'],
         },
         (accessToken, refreshToken, profile, done) => done(null, profile)
       )

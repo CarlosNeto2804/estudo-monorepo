@@ -9,6 +9,7 @@ export class CalculatorBankCertificatesDeposit {
   public constructor(app: Express.Application, db: IDataBase<IPrice>) {
     const formatter = new CalculatorFormatter();
     const service = new CalculatorService(formatter, db);
-    new CalculatorController(app, service);
+     new CalculatorController(app,service);
+
   }
 }

@@ -34,7 +34,7 @@ export class CalculatorService {
 
   private unitPriceTCDB(tcdi_acc, init = 1000) {
     const parsed = this.formatter.decimalAdjust(tcdi_acc, -8);
-    return this.formatter.completeDecimalPlaces(parsed * init, 8);
+    return this.formatter.completeDecimalPlaces(parsed * init, 8).replace(',',"");
   }
   private sortArray(a: IPrice, b: IPrice) {
     const d1 = new Date(a.dtDate).getTime();
