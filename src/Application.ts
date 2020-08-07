@@ -44,7 +44,7 @@ class Application {
   }
   private middlewares(): void {
     this.app.use(Express.json());
-    this.app.use(Cors());
+    this.app.use(Cors({origin:'*'}));
     this.app.use(Passport.initialize())
   }
   private listenPort(): void {
