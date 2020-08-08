@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import read from './LoaderCSV';
-import { IPrice } from '../interfaces/IPrice';
+
 interface Connecion<T> {
   message: string;
   connected: boolean;
