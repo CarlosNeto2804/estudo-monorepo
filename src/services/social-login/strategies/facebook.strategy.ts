@@ -1,7 +1,13 @@
 import { PassportStatic } from 'passport';
 import { Strategy } from 'passport-facebook';
 import { ConfigEnvVars } from '../../../config';
+/**
+ * - Cria a estratégia de login com facebook
+ */
 export class FacebookStrategy {
+  /**
+   * - Cria a estratégia de login com facebook
+   */
   constructor(passport: PassportStatic, config: ConfigEnvVars) {
     passport.use(
       new Strategy(
@@ -16,7 +22,7 @@ export class FacebookStrategy {
             'emails',
             'gender',
             'picture.type(large)',
-          ],    
+          ],
         },
         (accessToken, refreshToken, profile, done) => done(null, profile)
       )
