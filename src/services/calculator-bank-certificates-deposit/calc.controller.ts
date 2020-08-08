@@ -1,15 +1,24 @@
-import Express, { Request, Response } from 'express';
+import {Application} from 'express';
 import { CalculatorService } from './calc.service';
 import { IParamsToCalculate } from '../../interfaces/IParamsToCalculate';
 import { Validator } from './calc.validator';
+/**
+   * Habilita end point para consulta
+   */
 export class CalculatorController {
+  /**
+   * Habilita end point para consulta
+   */
   constructor(
-    private app: Express.Application,
+    private app: Application,
     private service: CalculatorService
   ) {
-    this.calculateUnityPrice()
+    this.startRoute()
   }
-  calculateUnityPrice() {
+  /**
+   * Inicia rota para calculo
+   */
+  private startRoute() {
     this.app.post('/cdb/calculate-price', (req, res) => {
       const info = req.body as IParamsToCalculate;
       const erros = Validator.validate(info);

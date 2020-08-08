@@ -1,6 +1,16 @@
+/**
+ * - Utlilitario do Servico de Calculo
+ * - Executa os ajustes de precisão decimal
+ */
 export class CalculatorFormatter {
+  /**
+   * - Utlilitario do Servico de Calculo
+   * - Executa os ajustes de precisão decimal
+   */
   public constructor() {}
-
+  /**
+   * - Completa casas decimais
+   */
   public completeDecimalPlaces(value: number, casas: number): any {
     return value.toLocaleString('pt-BR', {
       minimumFractionDigits: casas,
