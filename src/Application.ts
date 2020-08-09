@@ -4,30 +4,39 @@ import Cors from 'cors';
 import { DataBase } from './database';
 import { IPrice } from './interfaces/IPrice';
 import { IServiceConstructor } from './interfaces/IServiceConstructor';
+import { Log } from './log';
+import { MongoDB } from './mongodb';
 import { Services } from './services';
 class Application {
   private app: Express.Application;
+  private logger: Log;
   private db: DataBase<IPrice>;
   public constructor() {
+    this.logger = new Log('Application')
     this.init();
   }
   private async init() {
-    await this.database();
+    await this.dataset();
+    await this.mongodb();
     this.app = Express();
     this.middlewares();
     this.services();
     this.listenPort();
   }
+  private async mongodb() {
+    const mongo = new MongoDB();
+    await mongo.connect();
+  }
   /**
    *
    * faz a leitura do arquivo .csv e disponibiliza os dados em formato JSON para a aplicação
    */
-  private async database() {
+  private async dataset() {
     try {
       this.db = new DataBase<IPrice>();
       this.db.connect().then((res) => {
         if (res.connected) {
-          console.log(`${res.message} with status ${res.status}`);
+          this.logger.info(`${res.message} com status ${res.status}`);
         }
 
         this.db.store.forEach((el) => {
@@ -37,7 +46,7 @@ class Application {
         });
       });
     } catch (error) {
-      console.log(error);
+      this.logger.error(error);
     }
   }
   /**
@@ -64,7 +73,7 @@ class Application {
    */
   private listenPort(): void {
     this.app.listen(process.env.PORT || 3000, () =>
-      console.log('Service Running')
+      this.logger.success('Aplicação Rondando')
     );
   }
 }
