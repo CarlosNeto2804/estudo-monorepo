@@ -22,7 +22,7 @@ export class DataBase<T> {
           this.store = results;
           this.store.forEach(cb);
           resolve({
-            message: 'Database successfully connected',
+            message: 'DataSet lido com sucesso',
             connected: true,
             status: 200,
             content: results,
