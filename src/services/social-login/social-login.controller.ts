@@ -14,53 +14,23 @@ export class SocialLoginController {
    * Feito de forma estatica pois o callback irá utilizar o this da prorpia função express
    * então não irá funcionar
    */
-  private static configuration: ConfigEnvVars;
-  constructor(
-    private app: Application,
-    private passport: PassportStatic,
-    config: ConfigEnvVars
-  ) {
-    SocialLoginController.configuration = config;
-    this.googleAuthRoutes();
-    this.facebookAuthRoutes();
-  }
-  /**
-   * - GOOGLE
-   * - Rotas para autenticação e callback
-   */
-  private googleAuthRoutes() {
-    this.app.get(
-      '/social-login/google',
-      this.authenticate('google', { scope: ['profile', 'email'] })
-    );
-    this.app.get(
-      '/social-login/google/callback',
-      this.authenticate('google', {}),
-      this.authCallback
-    );
-  }
-  /**
-   * - FACEBOOK;
-   * - Rotas para autenticação e callback
-   */
-  private facebookAuthRoutes() {
-    this.app.get(
-      '/social-login/facebook',
-      this.authenticate('facebook', { scope: ['email'] })
-    );
+  private static configEnv: ConfigEnvVars;
+  private static passport: PassportStatic;
 
-    this.app.get(
-      '/social-login/facebook/callback',
-      this.authenticate('facebook', {}),
-      this.authCallback
-    );
+  constructor(passport: PassportStatic, config: ConfigEnvVars) {
+    SocialLoginController.configEnv = config;
+    SocialLoginController.passport = passport;
   }
 
+  public authenticate(strategy: string, opt?: AuthOptions) {
+    const opt_parsed = opt as AuthenticateOptions;
+    return SocialLoginController.passport.authenticate(strategy, opt_parsed); //realiza login com rede social
+  }
   /**
-   * - Faz uma requisição para o serviço de clinte
+   * - Faz uma requisição para o serviço de cliente
    * - Retorna ao front end
    */
-  private authCallback(req: Request, res: Response) {
+  public authCallback(req: Request, res: Response) {
     /**
      * - Aqui é feito uma requisição http para o serviço de clientes,
      *    mas poderiamos alterar outro tipo de comunicação
@@ -69,10 +39,8 @@ export class SocialLoginController {
      *    do cliente salvo ele só obtem os dados;
      * - Simulando uma arquitetura de microserviços;
      */
-    const clientService = SocialLoginController.configuration.get(
-      'API_CLIENT_URL'
-    );
-    // axios.default.post(`${clientService}/recive-user`, req.user);
+    const clientService = SocialLoginController.configEnv.get('API_CLIENT_URL');
+    axios.default.post(`${clientService}`, req.user);
 
     /**
      * é feita uma cópia do objeto **user** da requisição para não alterar o original
@@ -86,12 +54,7 @@ export class SocialLoginController {
       displayName: copy.displayName,
     };
     const query: string = querystring.stringify(client);
-    const appUrl: string = SocialLoginController.configuration.get('APP_URL');
+    const appUrl: string = SocialLoginController.configEnv.get('APP_URL');
     return res.redirect(`${appUrl}?${query}`);
-  }
-
-  private authenticate(strategy: string, opt?: AuthOptions) {
-    const opt_parsed = opt as AuthenticateOptions;
-    return this.passport.authenticate(strategy, opt_parsed); //realiza login com rede social
   }
 }
