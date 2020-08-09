@@ -1,5 +1,6 @@
-import { Schema, model } from 'mongoose';
-export class Client extends Schema {
+import { Schema, model, Model } from 'mongoose';
+import { IClient } from '../../interfaces/repo/IClient';
+class Client extends Schema {
   constructor() {
     super(
       {
@@ -12,7 +13,6 @@ export class Client extends Schema {
       },
       { timestamps: true }
     );
-    model('Client', this);
   }
 }
-
+export default model<IClient>('User', new Client());
