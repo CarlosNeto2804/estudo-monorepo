@@ -53,8 +53,10 @@
 * **yarn.lock**;
 
 ## Modulos:
-Cada modulo deve ser construido utlizando o padrão de injeção de dependencia, onde cada objeto recebe suas dependencias externas via parâmetro em seu construtor. Cada modulo deve ter seu arquivo index, que é responsável por gerenciar as dependencias do modulo. As fucionalidades são divididas em rotas, controller, service e em alguns casos podemos tambem utilizar o utils e schema.
-### Exemplo de criação de um modulo de 
+Cada modulo deve ser construido utlizando o padrão de injeção de dependencia, onde cada objeto recebe suas dependencias externas via parâmetro em seu construtor. Cada modulo deve ter seu arquivo index, que é responsável por gerenciar suas dependencias. As fucionalidades são divididas em rotas, controller, service e em alguns casos podemos tambem utilizar o utils e schema.
+
+### Exemplo de criação de um modulo de hello:  [Modulo Hello](MODULES.md)
+
 ### Sobre o Projeto
 - [README](../README.md);
 - [Depêndencias](DEPENDENCIAS.md);

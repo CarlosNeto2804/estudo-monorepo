@@ -3,8 +3,8 @@ import { IClientDTO } from '../../interfaces/repo/IClient';
 import { ClientService } from './client.service';
 
 export class ClientController {
-  private static service: ClientService;
-  constructor(service) {
+  private static service: ClientService
+  constructor(service: ClientService) {
     ClientController.service = service;
   }
   async create(req: Request, res: Response): Promise<Response> {
