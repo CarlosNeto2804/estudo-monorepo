@@ -33,7 +33,7 @@ export class SocialLoginController {
   public authCallback(req: Request, res: Response) {
     /**
      * - Aqui é feito uma requisição http para o serviço de clientes,
-     *    mas poderiamos alterar outro tipo de comunicação
+     *    mas poderiamos alterar para outro tipo de comunicação
      * - Não é necessário ser de forma sincrona,
      *    pois o serviço de login não irá depender
      *    do cliente salvo ele só obtem os dados;
@@ -44,7 +44,7 @@ export class SocialLoginController {
 
     /**
      * é feita uma cópia do objeto **user** da requisição para não alterar o original
-     * esse tipo de craição de cópia é mais eficiente pois o ao utlizar o *Object.assign()*,
+     * esse tipo de criaão de cópia é mais eficiente pois ao utlizar o *Object.assign()*,
      * metodo não cria cópia dos possiveis objetos internos do **user**, abrindo espaço para
      * a alteração indevida de dados.
      */
