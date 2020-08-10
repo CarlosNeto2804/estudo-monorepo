@@ -1,7 +1,7 @@
 # Configuração do projeto
 
 ## Dependências:
-Certifique-se se possuir as seguintes dependências instaladas em sua máquina:
+Certifique-se de possuir as seguintes dependências instaladas em sua máquina:
 - **node**: ^v12.13.0;
 - **npm**: ^6.14.6;
 - **yarn**: ^1.21.1 (opcional);
