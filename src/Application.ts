@@ -6,7 +6,7 @@ import { IPrice } from './interfaces/IPrice';
 import { IServiceConstructor } from './interfaces/IServiceConstructor';
 import { Log } from './log';
 import { MongoDB } from './mongodb';
-import { Services } from './services';
+import { ModulesOfServices } from './modules';
 class Application {
   private app: Express.Application;
   private logger: Log;
@@ -20,7 +20,7 @@ class Application {
     await this.mongodb();
     this.app = Express();
     this.middlewares();
-    this.services();
+    this.modulesServices();
     this.listenPort();
   }
   private async mongodb() {
@@ -52,13 +52,13 @@ class Application {
   /**
    * injeta as independecias dos serviços e os habilita
    */
-  private services() {
+  private modulesServices() {
     const params: IServiceConstructor = {
       app: this.app,
       db: this.db,
       passport: Passport,
     };
-    new Services(params);
+    new ModulesOfServices(params);
   }
   /**
    * Insere os middlewares que a aplicação necessita

@@ -1,7 +1,4 @@
 # Arquitetura
-Aplicação estruturada em modulos de serviços, onde cada serviço atua de forma isolada, facilitando a migração para uma aquitetura de microserviços.
-Cada serviço deve ser construido utlizando o padrão de injeção de dependencia, onde cada objeto recebe suas dependencias externas via parâmetro em seu construtor. Cada serviço deve ter seu arquivo index, que é responsável por gerenciar as dependencias do serviço;
-
 ## Organização do Projeto
 ```text
 - configurations
@@ -16,7 +13,7 @@ Cada serviço deve ser construido utlizando o padrão de injeção de dependenci
 | - interfaces/
 | - log/
 | - mongodb/
-| - services/
+| - modules/
   | - calculator-bank-certificates-deposit/
   | - clients/
   | - home-index/
@@ -43,7 +40,7 @@ Cada serviço deve ser construido utlizando o padrão de injeção de dependenci
   * **interfaces**: contém as interfaces do tipos dados para facilitar implementações;
   * **log**: ferramenta que gera logs do sistema;
   * **mongodb**: gerecia a conexão com banco de dados mongo db;
-  * **services**: contém os modulos de serviços que a aplicação executa;
+  * **modules**: contém os modulos que a aplicação executa;
   * **Application.ts**: Classe que inicia todo o servidor.
 * **.gitignore**;
 * **.prettierrc**: configuração de identação
@@ -54,6 +51,10 @@ Cada serviço deve ser construido utlizando o padrão de injeção de dependenci
 * **Procfile**: comando para heroku;
 * **README**;
 * **yarn.lock**;
+
+## Modulos:
+Cada modulo deve ser construido utlizando o padrão de injeção de dependencia, onde cada objeto recebe suas dependencias externas via parâmetro em seu construtor. Cada modulo deve ter seu arquivo index, que é responsável por gerenciar as dependencias do modulo. As fucionalidades são divididas em rotas, controller, service e em alguns casos podemos tambem utilizar o utils e schema.
+### Exemplo de criação de um modulo de 
 ### Sobre o Projeto
 - [README](../README.md);
 - [Depêndencias](DEPENDENCIAS.md);

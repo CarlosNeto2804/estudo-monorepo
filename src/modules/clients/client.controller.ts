@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { IClientDTO } from './../../interfaces/repo/IClient';
+import { IClientDTO } from '../../interfaces/repo/IClient';
 import { ClientService } from './client.service';
 
 export class ClientController {
@@ -14,7 +14,7 @@ export class ClientController {
       displayName: req.body.displayName,
       picture: req.body.photos[0].value ,
       email: req.body.emails[0].value,
-      account_id: req.body.id
+      account_id: req.body.ids
     };
     await ClientController.service.save(client);
     return res.status(201);
