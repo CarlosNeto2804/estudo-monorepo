@@ -17,6 +17,7 @@ Criar um serviço para calcular o valor de um CDB pós fixado indexado ao CDI em
 
 ### Documentação
 - [Configurações do Projeto](docs/DEPENDENCIAS.md);
+- [Váriaveis de Ambiente](docs/ENV.md);
 - [Arquitetura](docs/ARQUITETURA.md);
 - [Infra-Estrutura](docs/INFRA.md);
 - [Sobre Modulos](MODULES.md);

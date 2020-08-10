@@ -13,3 +13,10 @@ acessar os paineis de desenvolvedor e criar as chave secreta e id de aplicação
 
 - [Google](https://console.developers.google.com) 
 - [Facebook](https://developers.facebook.com/docs/facebook-login/)
+
+### Sobre o Projeto
+- [Configurações do Projeto](DEPENDENCIAS.md);
+- [README](../README.md);
+- [Arquitetura](ARQUITETURA.md);
+- [Infra-Estrutura](INFRA.md);
+- [Sobre Modulos](MODULES.md);

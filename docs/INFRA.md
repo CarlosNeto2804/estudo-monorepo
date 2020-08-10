@@ -8,3 +8,4 @@ A aplicação foi hospedada no [Heroku](https://heroku.com) uma plataforma de cl
 - [Configurações do Projeto](DEPENDENCIAS.md);
 - [Arquitetura](ARQUITETURA.md);
 - [Sobre Modulos](MODULES.md);
+- [Váriaveis de Ambiente](ENV.md);
