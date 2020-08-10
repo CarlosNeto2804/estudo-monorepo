@@ -8,19 +8,27 @@ export class ClientController {
     ClientController.service = service;
   }
   async create(req: Request, res: Response): Promise<Response> {
-    const client: IClientDTO = {
-      provider: req.body.provider,
-      _raw: req.body._raw,
-      displayName: req.body.displayName,
-      picture: req.body.photos[0].value ,
-      email: req.body.emails[0].value,
-      account_id: req.body.ids
-    };
-    await ClientController.service.save(client);
-    return res.status(201);
+    try {
+      const client: IClientDTO = {
+        provider: req.body.provider,
+        _raw: req.body._raw,
+        displayName: req.body.displayName,
+        picture: req.body.photos[0].value ,
+        email: req.body.emails[0].value,
+        account_id: req.body.ids
+      };
+      await ClientController.service.save(client);
+      return res.status(201);
+    } catch (error) {
+      return res.send(error) 
+    }
   }
   async findAll(req: Request, res: Response): Promise<Response> {
-    const clients = await ClientController.service.findAll();
-    return res.status(200).send(clients);
+    try {
+      const clients = await ClientController.service.findAll();
+      return res.status(200).send(clients);
+    } catch (error) {
+      return res.send(error);
+    }
   }
 }

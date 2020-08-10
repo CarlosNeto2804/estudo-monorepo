@@ -7,7 +7,12 @@ export class ClientService {
     this.logger = new Log('ClientService');
   }
   public async findAll(): Promise<IClient[]> {
-    return await this.repo.find({});
+    try {
+      return await this.repo.find({});
+    } catch (error) {
+      this.logger.error(error);
+      new Error('Falha ao buscar todos os clientes')
+    }
   }
   public async save(clientData: IClientDTO): Promise<string> {
     try {
@@ -15,21 +20,25 @@ export class ClientService {
        * Verifica se cliente já foi cadastrado
        */
       const exist = await this.verify(clientData.account_id);
-      if (exist) return 'Usuário já cadastrado';
+      if (exist) return 'Cliente já cadastrado';
       else {
         /**
          * Caso não tenha sido ele é registrado
          */
         await this.repo.create(clientData);
-        return 'Usuário criado com sucesso!';
+        return 'Cliente criado com sucesso!';
       }
     } catch (error) {
       this.logger.error(error);
-      throw error;
+      return 'Falha ao cadastrar cliente';
     }
   }
   private async verify(account_id: string): Promise<boolean> {
-    const client = await this.repo.findOne({ account_id });
-    return client ? true : false;
+    try {
+      const client = await this.repo.findOne({ account_id });
+      return client ? true : false;
+    } catch (error) {
+      this.logger.error(error);
+    }
   }
 }

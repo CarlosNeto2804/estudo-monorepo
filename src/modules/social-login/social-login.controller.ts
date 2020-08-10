@@ -40,7 +40,8 @@ export class SocialLoginController {
      * - Simulando uma arquitetura de microserviços;
      */
     const clientService = SocialLoginController.configEnv.get('API_CLIENT_URL');
-    axios.default.post(`${clientService}`, req.user);
+    axios.default.post(`${clientService}`, req.user)
+
 
     /**
      * é feita uma cópia do objeto **user** da requisição para não alterar o original
@@ -55,6 +56,6 @@ export class SocialLoginController {
     };
     const query: string = querystring.stringify(client);
     const appUrl: string = SocialLoginController.configEnv.get('APP_URL');
-    return res.redirect(`${appUrl}?${query}`);
+    return res.redirect(`${appUrl}/?${query}`);
   }
 }

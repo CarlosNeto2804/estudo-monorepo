@@ -5,7 +5,7 @@ import { HomeController } from './home.controller';
  */
 export class HomeIndex {
   /**
-   * Fornece Informações sobre o projeto na roita raiz
+   * Fornece Informações sobre o projeto na rota raiz
    */
   constructor(app: Application) {
     new HomeController(app);

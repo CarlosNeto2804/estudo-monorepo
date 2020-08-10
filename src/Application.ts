@@ -12,20 +12,30 @@ class Application {
   private logger: Log;
   private db: DataBase<IPrice>;
   public constructor() {
-    this.logger = new Log('Application')
+    this.logger = new Log('Application');
     this.init();
   }
   private async init() {
-    await this.dataset();
-    await this.mongodb();
-    this.app = Express();
-    this.middlewares();
-    this.modulesServices();
-    this.listenPort();
+    try {
+      await this.dataset();
+      await this.mongodb();
+      this.app = Express();
+      this.middlewares();
+      this.modulesServices();
+      this.listenPort();
+    } catch (error) {
+      this.logger.error(error);
+      process.exit(1)
+    }
   }
   private async mongodb() {
-    const mongo = new MongoDB();
-    await mongo.connect();
+    try {
+      const mongo = new MongoDB();
+      await mongo.connect();
+    } catch (error) {
+      this.logger.error(error)
+      
+    }
   }
   /**
    *
@@ -44,7 +54,9 @@ class Application {
           const [day, month, year] = el.dtDate.split('/');
           el.dtDate = `${year}-${month}-${day}`;
         });
-      });
+      }).catch(e=>{
+        console.log(e)
+      })
     } catch (error) {
       this.logger.error(error);
     }
