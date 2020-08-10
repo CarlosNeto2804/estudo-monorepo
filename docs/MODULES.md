@@ -53,7 +53,7 @@ export class Hello{
 }
 ```
 
-Depois importar no arquivo src/modules/index.ts e registrar o novo modulo em ModulesOfServices
+Depois importar no arquivo src/modules/index.ts e registrar o novo modulo em [ModulesOfServices](../src/modules/index.ts)
 ```ts
 // src/modules/index.ts
 import { IServiceConstructor } from '../interfaces/IServiceConstructor';
