@@ -5,7 +5,6 @@ Foi utilizado o [Mongo DB](https://www.mongodb.com) para armazenamento dos dados
 A aplicação foi hospedada no [Heroku](https://heroku.com) uma plataforma de cloud que oferece "Platform as a Service", ou seja, ele permite que você hospede suas aplicações em um ambiente facilmente escalável e com suporte a várias tecnologias. Ele tem um plano free, que é indicado para testes, e opções pagas com mais funcionalidades e suporte. Se um aplicativo tiver um dinamômetro da web gratuito e esse dinamômetro não receber tráfego da web em um período de 30 minutos, ele entrará em suspensão. Além do dinamômetro da web, o dinamômetro (se houver) também dormirá. Em seu plano gratuito caso não receba tráfego da web em um período de 30 minutos, ele entrará em suspensão. Ao receber tráfego da web, ele se tornará ativo novamente, logo a primeira requisição terá um tempo maior de reposta
 ### Sobre o Projeto
 - [README](../README.md);
-- [Depêndencias](DEPENDENCIAS.md);
+- [Configurações do Projeto](DEPENDENCIAS.md);
 - [Arquitetura](ARQUITETURA.md);
-- [Banco de Dados](BD.md);
-- [Requisições HTTP](HTTP.md);
+- [Sobre Modulos](MODULES.md);

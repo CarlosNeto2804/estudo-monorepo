@@ -59,7 +59,6 @@ Cada modulo deve ser construido utlizando o padrão de injeção de dependencia,
 
 ### Sobre o Projeto
 - [README](../README.md);
-- [Depêndencias](DEPENDENCIAS.md);
+- [Configurações do Projeto](DEPENDENCIAS.md);
 - [Infra-Estrutura](INFRA.md);
-- [Banco de Dados](BD.md);
-- [Requisições HTTP](HTTP.md);
+- [Sobre Modulos](MODULES.md);

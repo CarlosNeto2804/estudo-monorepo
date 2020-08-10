@@ -2,24 +2,21 @@
 
 ## Serviço de Cálculo de Preços de CBD
 
-### Dependências
-- node: ^v12.13.0;
-- npm: ^6.14.6 ou yarn: ^1.21.1;
+## Contexto
 
-### Run
+---
 
-```bash
-#usando npm
-$ npm run dev
+Os Certificados de Depósito Bancário (**CDB**) são títulos privados representativos de depósitos a prazo feitos por pessoas físicas ou jurídicas. Podem emitir CDB: os bancos comerciais, múltiplos, de investimento, de desenvolvimento e a Caixa Econômica Federal.
 
-#usando yarn
-$ yarn dev
-```
+Mais informações sobre o **[CDB](https://blog.toroinvestimentos.com.br/o-que-e-cdb-investimentohttps://blog.toroinvestimentos.com.br/o-que-e-cdb-investimento)** e o [**CDI**](https://blog.nubank.com.br/cdi-o-que-e/).
 
-### Sobre o Projeto
-- [Depêndencias](docs/DEPENDENCIAS.md);
+## Desafio
+
+---
+Criar um serviço para calcular o valor de um CDB pós fixado indexado ao CDI em uma data específica e uma página web em que esses dados calculados serão expostos.
+
+### Documentação
+- [Configurações do Projeto](docs/DEPENDENCIAS.md);
 - [Arquitetura](docs/ARQUITETURA.md);
-- [Banco de Dados](docs/BD.md);
 - [Infra-Estrutura](docs/INFRA.md);
-- [Requisições HTTP](docs/HTTP.md);
-
+- [Sobre Modulos](MODULES.md);

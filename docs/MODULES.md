@@ -68,3 +68,9 @@ export class ModulesOfServices{
   }
 }
 ```
+
+### Sobre o Projeto
+- [README](../README.md);
+- [Configurações do Projeto](DEPENDENCIAS.md);
+- [Arquitetura](ARQUITETURA.md);
+- [Infra-Estrutura](INFRA.md);
