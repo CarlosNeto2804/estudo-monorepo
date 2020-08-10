@@ -34,12 +34,26 @@ Cada serviço deve ser construido utlizando o padrão de injeção de dependenci
 - yarn.lock
 ```
 ## Diretórios
-- **configurations**: responsável por armazenar os diretórios das variáveis de ambiente. Os diretórios são montados de acordo com o ambiente que estão sendo executados, local, homologação, produção, etc.
-
-
-
-
-
+* **configurations**: responsável por armazenar os diretórios das variáveis de ambiente. Os diretórios são montados de acordo com o ambiente que estão sendo executados, local, homologação, produção, etc;
+* **docs**: documentação do projeto;
+* **node_modules**;
+* **src**: core do projeto;
+  * **config**: ferramenta que irá gerenciar as variáveis de ambiente dentro do projeto;
+  * **database**: faz o gerenciamento dos dados em csv
+  * **interfaces**: contém as interfaces do tipos dados para facilitar implementações;
+  * **log**: ferramenta que gera logs do sistema;
+  * **mongodb**: gerecia a conexão com banco de dados mongo db;
+  * **services**: contém os modulos de serviços que a aplicação executa;
+  * **Application.ts**: Classe que inicia todo o servidor.
+* **.gitignore**;
+* **.prettierrc**: configuração de identação
+* **cdi_prices.csv**: dataset de calculos;
+* **LICENSE**: licensa do projeto
+* **nodemon.json**;
+* **package.json**: Informaçoes do projeto e gerenciador de dependencias da aplicação;
+* **Procfile**: comando para heroku;
+* **README**;
+* **yarn.lock**;
 ### Sobre o Projeto
 - [README](../README.md);
 - [Depêndencias](DEPENDENCIAS.md);
