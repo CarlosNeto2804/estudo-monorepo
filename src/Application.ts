@@ -34,7 +34,6 @@ class Application {
       await mongo.connect();
     } catch (error) {
       this.logger.error(error)
-      
     }
   }
   /**

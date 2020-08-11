@@ -15,10 +15,7 @@ export class MongoDB {
   }
   public async connect() {
     try {
-      const db_uri: string = ConfigEnvVars.get('MONGO_URL') || process.env.MONGO_URL
-      if (!db_uri) {
-        throw 'URL de conexão do Banco não informada';
-      }
+      const db_uri: string =  ConfigEnvVars.get('MONGO_URL') || process.env.MONGO_URL
       await connect(db_uri, this.getOptions());
       this.logger.success('Banco de dados Mongo DB conectado com sucesso');
     } catch (error) {

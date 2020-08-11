@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "NODE_ENV=local nodemon src/Application.ts",
-    "start": "node dist/Application.js",
+    "start": "node  dist/Application.js",
     "prebuild": "rimraf dist",
     "build": "sucrase  ./src  -d ./dist --transforms typescript,imports"
   },
